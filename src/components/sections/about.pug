@@ -1,2 +1,22 @@
 section.section.about
-	h2 about
+	.container.container--about
+		.about__content
+			h2.about__title What we do to help our client grow in digital era,
+			include ../blocks/advantagesList
+			+advantagesList([
+				{
+					image: '1.png',
+					title: 'Make Your business To Be Better Famous In Internet',
+					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+				},
+				{
+					image: '3.png',
+					title: 'Bring Technology To Your Comfrotable Home',
+					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+				},
+				{
+					image: '2.png',
+					title: 'Build Your Digital Product That Suitable For Your Need',
+					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+				}
+			])

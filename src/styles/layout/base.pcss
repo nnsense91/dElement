@@ -28,13 +28,11 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1480px;
-  width: 95%;
-  // width: 1490px;
+  width: 68.8%;
+}
 
-  @include phones {
-    width: 85%;
-  }
+.section {
+  overflow: hidden;
 }
 
 .fullscreen-section {
@@ -45,6 +43,12 @@ body {
 button {
   border: 0;
   cursor: pointer;
+}
+
+.button {
+  background-color: $button-color;
+  color: #ffffff;
+  border-radius: 10px;
 }
 
 * {
@@ -65,6 +69,10 @@ h5,
 h6 {
   font-weight: normal;
   margin: 0;
+}
+
+h2 {
+  font-size: 36px;
 }
 
 p {

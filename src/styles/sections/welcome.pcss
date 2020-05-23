@@ -1,3 +1,49 @@
 .welcome {
-	padding-top: 40px;
+	position: relative;
+	height: 100vh;
+	background: linear-gradient(0deg, #D3E0EC 4%, rgba(152, 195, 232, 0) 31.12%);
+}
+
+.container--welcome {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.welcome__content {
+	width: 58%;
+}
+
+.welcome__title {
+	width: 95%;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 55px;
+	line-height: 1.30;
+	letter-spacing: 0.04em;
+}
+
+.welcome__button {
+	margin-top: 75px;
+	width: 220px;
+	height: 56px;
+	box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+}
+
+.welcome__description {
+	margin-top: 39px;
+	width: 75%;
+	opacity: 0.6;
+	line-height: 26px;
+	letter-spacing: 0.05em;
+	line-height: 26px;
+}
+
+.welcome:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("~images/illustration.png") 0 100%/contain no-repeat;
+    height: 92.5%;
+    width: 50%;
+    right: 25px;
 }
