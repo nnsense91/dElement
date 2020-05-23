@@ -5,7 +5,7 @@ mixin advantagesList(itemArray)
                 li.advantages__item
                     .advantages__item-container
                         .advantages__image-block
-                            +image(`${itemArray[i].image}`, "advantages__picture", "Приведите технологии к себе домой")
+                            +image(`${itemArray[i].image}`, "advantages__picture"+ ` ${itemArray[i].extraClass}`, `${itemArray[i].alt}`)
                         h3.advantages__title=`${itemArray[i].title}`
                         p.advantages__description=`${itemArray[i].description}`
                         button.advantages__button Learn More
