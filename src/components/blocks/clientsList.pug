@@ -1,0 +1,14 @@
+mixin clientsList(itemArray)
+	table(class="clients-table")
+		- let rowsCount = parseInt(itemArray.length / 4);
+		- if ((itemArray.length % 4))
+		- rowsCount++
+		- for (let i = 0; i < rowsCount; i++)
+			tr.clients-table__row
+				- for (let j = 0; j < 4; j++)
+					- if (itemArray[j+i*4])
+						td.clients-table__item
+							a(href="#").clients-table__link=`${itemArray[j+i*4]}`
+					- else
+						//- условие отрисовывает дополнительные "ячейки" при отсутствии значений. Вкл или выкл в зависимости от задумки.
+						td.clients-table__item=``

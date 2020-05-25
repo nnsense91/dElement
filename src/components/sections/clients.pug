@@ -1,2 +1,7 @@
 section.section.clients
-	h2 clients
+	.container
+		.clients__title-block
+			h2.clients__title Our Beloved Client
+			p.clients__description Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+		include ../blocks/clientsList
+		+clientsList(["logo client 1","logo client 2", "logo client 3", "logo client 4", "logo client 5", "logo client 6", "logo client 7", "More Client"])
