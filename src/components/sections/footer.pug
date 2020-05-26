@@ -1,3 +1,22 @@
 footer.footer
-	.container
-		h2 footer
+	.container.container--footer
+		.footer__content
+			.footer__col.footer__contacts
+				.footer__company-name.footer__col-title
+					include ../blocks/logo
+					+logo(["footer"])
+					h2.footer__name Afrianska
+				ul.contacts__list
+					li.contacts__item
+						address.footer__adress Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					li.contacts__item
+						a(href="tel:+62-812-7313-4321").footer__phone +62-812-7313-4321
+					li.contacts__item
+						a(href="mailto:hello.afrian@gmail.com").footer__email hello.afrian@gmail.com
+			.footer__col.footer__nav
+				h3.footer__col-title.footer__nav-title About Us
+				include ../blocks/navigation	
+			.footer__col.footer__socials
+				h3.footer__col-title.footer__socials-title Follow Us
+				include ../blocks/socials
+		.footer__copyright 2019 © Afrianska. All rights reserved.
