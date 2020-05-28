@@ -2,7 +2,6 @@
   "text-color": "#1F3F68",
   "main-blue-color": "#316099",
   "button-color": "#5A98D0",
-  "bp-desktop-hd": "1800px",
   "bp-desktop": "1200px",
   "bp-tablets": "768px",
   "bp-phones": "480px"

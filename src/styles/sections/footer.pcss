@@ -60,8 +60,38 @@
 }
 
 .footer__adress {
+	position: relative;
 	font-style: normal;
 	opacity: 0.4;
+	padding-left: 30px;
+
+	&::before {
+		content: "A.";
+		position: absolute;
+		left: 0;
+	}
+}
+
+.footer__phone {
+	position: relative;
+	padding-left: 30px;
+
+	&::before {
+		content: "T.";
+		position: absolute;
+		left: 0;
+	}
+}
+
+.footer__email {
+	position: relative;
+	padding-left: 30px;
+
+	&::before {
+		content: "E.";
+		position: absolute;
+		left: 0;
+	}
 }
 
 .footer__copyright {
